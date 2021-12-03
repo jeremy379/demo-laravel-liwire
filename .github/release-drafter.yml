@@ -1,37 +1,48 @@
-name-template: 'v$RESOLVED_VERSION'
+ame-template: 'v$RESOLVED_VERSION'
 tag-template: 'v$RESOLVED_VERSION'
 template: |
   # What's Changed
-
   $CHANGES
+
+change-template: '- $TITLE ([#$NUMBER](https://github.com/stefanzweifel/changelog-updater-action/pull/$NUMBER))'
+
 categories:
-  - title: 'Breaking'
-    label: 'type: breaking'
-  - title: 'New'
-    label: 'type: feature'
-  - title: 'Bug Fixes'
-    label: 'type: bug'
-  - title: 'Maintenance'
-    label: 'type: maintenance'
-  - title: 'Documentation'
-    label: 'type: docs'
+  - title: Added
+    labels:
+      - 'changelog:added'
+  - title: Changed
+    labels:
+      - 'changelog:changed'
+  - title: Deprecated
+    labels:
+      - 'changelog:deprecated '
+  - title: Removed
+    labels:
+      - 'changelog:removed'
+  - title: Fixed
+    labels:
+      - 'changelog:fixed'
+  - title: Security
+    labels:
+      - security
+      - changelog:security
   - title: 'Dependency Updates'
-    label: 'type: dependencies'
+    labels:
+      - dependencies
 
 version-resolver:
   major:
     labels:
-      - 'type: breaking'
+      - 'changelog:removed'
   minor:
     labels:
-      - 'type: feature'
+      - 'changelog:added'
+      - 'changelog:deprecated'
   patch:
     labels:
-      - 'type: bug'
-      - 'type: maintenance'
-      - 'type: docs'
-      - 'type: dependencies'
-      - 'type: security'
+      - 'changelog:fixed'
+      - 'changelog:security'
+      - 'dependency'
 
 exclude-labels:
   - 'skip-changelog'
