@@ -24,7 +24,7 @@ release: ## Tag a release of main branch
 		BRANCH=$$(git branch --show-current); \
 		TAG_NAME=$$(date "+%Y-%m-%dT%H.%M.%S"); \
 		if [[ "main" == "$${BRANCH}" ]]; then \
-			git tag -a "$${TAG_NAME}" -m "Release to Production"; \
+			#git tag -a "$${TAG_NAME}" -m "Release to Production"; \
 			gh release create "$${TAG_NAME}" \
 			echo "Tagged $${BRANCH} with $${TAG_NAME}, pushing..."; \
 			git push --follow-tags; \
