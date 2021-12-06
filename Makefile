@@ -16,7 +16,7 @@ release: ## Tag a release of main branch
 		TAG_NAME=$$(date "+%Y-%m-%dT%H.%M.%S"); \
 		if [[ "main" == "$${BRANCH}" ]]; then \
 			gh release create "$${TAG_NAME}"; \
-			echo "Release created on main $${BRANCH} with version $${TAG_NAME}";
+			echo "Release created on main $${BRANCH} with version $${TAG_NAME}"; \
 		else \
 			echo "You can only make a release from the main branch! Stopping."; \
 		fi \
