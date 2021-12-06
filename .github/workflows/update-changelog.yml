@@ -18,7 +18,7 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@master
         with:
-          php-version: "8.0"
+          php-version: "7.4"
 
       - name: Update Changelog
         uses: stefanzweifel/changelog-updater-action@v1
