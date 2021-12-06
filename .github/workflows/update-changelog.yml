@@ -15,11 +15,6 @@ jobs:
         with:
           ref: main
 
-      - name: Setup PHP
-        uses: shivammathur/setup-php@master
-        with:
-          php-version: "7.4"
-
       - name: Update Changelog
         uses: stefanzweifel/changelog-updater-action@v1.1.1
         with:
