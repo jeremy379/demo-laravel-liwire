@@ -15,7 +15,7 @@ release: ## Tag a release of main branch
 		BRANCH=$$(git branch --show-current); \
 		TAG_NAME=$$(date "+%Y-%m-%dT%H.%M.%S"); \
 		if [[ "main" == "$${BRANCH}" ]]; then \
-			gh release create "$${TAG_NAME}" -t "$${TAG_NAME}" -n ""; \
+			gh release create "$${TAG_NAME}" --title "$${TAG_NAME}" -n "Release to production"; \
 			git fetch --tags origin; \
 			echo "Release created on main $${BRANCH} with version $${TAG_NAME}"; \
 		else \
