@@ -12,8 +12,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Merge branch 'main' of github.com:jeremy379/demo-laravel-liwire into main
 - 
 - - 'main' of github.com:jeremy379/demo-laravel-liwire:
+- 
 - - Update CHANGELOG
+- 
 - - Update CHANGELOG
+- 
 - 
 
 ## 2021-12-07T08.43.33 - 2021-12-07
@@ -40,4 +43,4 @@ Release to production
 - test
 - 
 
-## [Unreleased](https://github.com/jeremy379/demo-laravel-liwire/compare/HEAD)
+## [Unreleased](https://github.com/jeremy379/demo-laravel-liwire/compare/2021-12-07T08.58.39...HEAD)
