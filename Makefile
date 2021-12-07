@@ -18,6 +18,7 @@ release: ## Tag a release of main branch
 			gh release create "$${TAG_NAME}" --title "$${TAG_NAME}" -n "Release to production"; \
 			git fetch --tags origin; \
 			echo "Release created on main $${BRANCH} with version $${TAG_NAME}"; \
+			echo "The CHANGELOG.md will be generated in a minute, remember to pull"; \
 		else \
 			echo "You can only make a release from the main branch! Stopping."; \
 		fi \
