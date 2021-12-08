@@ -14,10 +14,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - - 'main' of github.com:jeremy379/demo-laravel-liwire:
 - 
 - 
+- 
 - - Update CHANGELOG
 - 
 - 
+- 
 - - Update CHANGELOG
+- 
 - 
 - 
 - 
@@ -46,4 +49,4 @@ Release to production
 - test
 - 
 
-## [Unreleased](https://github.com/jeremy379/demo-laravel-liwire/compare/test§...HEAD)
+## [Unreleased](https://github.com/jeremy379/demo-laravel-liwire/compare/v5e4er...HEAD)
