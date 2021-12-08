@@ -18,7 +18,7 @@
   ],
   "sort": "ASC",
   "template": "${{CHANGELOG}}\n\n<details>\n<summary>Uncategorized</summary>\n\n${{UNCATEGORIZED}}\n</details>",
-  "pr_template": "- ${{TITLE}}\n   - PR: #${{NUMBER}} - ${{BODY}}",
+  "pr_template": "- #${{NUMBER}} ${{TITLE}} \n ${{BODY}}",
   "empty_template": "- no changes",
   "label_extractor": [
     {

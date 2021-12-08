@@ -21,6 +21,7 @@ jobs:
         uses: mikepenz/release-changelog-builder-action@v2.7.1
         with:
           configuration: ".github/configuration.json"
+          outputFile: CHANGELOG_2.md
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
