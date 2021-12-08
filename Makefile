@@ -25,7 +25,7 @@ release: ## Tag a release of main branch
 	fi
 
 release-tag: ## Tag a release of main branch
-	@read -p "Full release to Production - are you sure? (Y/n) " ANSWER; \
+	@read -p "Full release to Production - are you sure? it's not friday right ? (Y/n) " ANSWER; \
 	if [[ $${ANSWER} == "Y" || $${ANSWER} == "y" ]]; then \
 		BRANCH=$$(git branch --show-current); \
 		TAG_NAME=$$(date "+%Y-%m-%dT%H.%M.%S"); \
