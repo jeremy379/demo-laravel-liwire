@@ -15,11 +15,14 @@ and this project DO NOT adheres to [Semantic Versioning](https://semver.org/spec
 - 
 - 
 - 
-- - Update CHANGELOG
-- 
-- 
 - 
 - - Update CHANGELOG
+- 
+- 
+- 
+- 
+- - Update CHANGELOG
+- 
 - 
 - 
 - 
@@ -49,4 +52,4 @@ Release to production
 - test
 - 
 
-## [Unreleased](https://github.com/jeremy379/demo-laravel-liwire/compare/v5e4er...HEAD)
+## [Unreleased](https://github.com/jeremy379/demo-laravel-liwire/compare/refs/tags/2021-12-08T14.01.08...HEAD)
