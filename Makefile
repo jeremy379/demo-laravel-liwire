@@ -28,7 +28,7 @@ release-tag: ## Tag a release of main branch
 	@read -p "Full release to Production - are you sure? it's not friday right ? (Y/n) " ANSWER; \
 	if [[ $${ANSWER} == "Y" || $${ANSWER} == "y" ]]; then \
 		BRANCH=$$(git branch --show-current); \
-		TAG_NAME=$$(date "v+%Y.%m.%d.%H%M%S"); \
+		TAG_NAME=$$(date "+%Y.%m.%d.%H%M%S"); \
 		if [[ "main" == "$${BRANCH}" ]]; then \
 			git tag -a "$${TAG_NAME}" -m "Release to Production"; \
 			echo "Tagged $${BRANCH} with $${TAG_NAME}, pushing..."; \
