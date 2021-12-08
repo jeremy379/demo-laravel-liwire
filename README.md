@@ -6,4 +6,3 @@
 ## A section
 
 - This line is there to trigger a PR & Action
-- This line too
