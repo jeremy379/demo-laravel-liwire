@@ -23,3 +23,17 @@ release: ## Tag a release of main branch
 			echo "You can only make a release from the main branch! Stopping."; \
 		fi \
 	fi
+
+release-tag: ## Tag a release of main branch
+	@read -p "Full release to Production - are you sure? (Y/n) " ANSWER; \
+	if [[ $${ANSWER} == "Y" || $${ANSWER} == "y" ]]; then \
+		BRANCH=$$(git branch --show-current); \
+		TAG_NAME=$$(date "+%Y-%m-%dT%H.%M.%S"); \
+		if [[ "main" == "$${BRANCH}" ]]; then \
+			git tag -a "$${TAG_NAME}" -m "Release to Production"; \
+			echo "Tagged $${BRANCH} with $${TAG_NAME}, pushing..."; \
+			git push --follow-tags; \
+		else \
+			echo "You can only make a release from the main branch! Stopping."; \
+		fi \
+	fi
